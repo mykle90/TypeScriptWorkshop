@@ -1,15 +1,19 @@
-﻿/// <reference path="shape.ts" />
+﻿/// <reference path="../typings/jquery/jquery.d.ts" />
+/// <reference path="shape.ts" />
+
 declare var $: JQueryStatic;
+
+import IShape = Shapes.IShape;
 
 class App {
 
-    private shapes: Shapes.IShape[];
+    private shapes: IShape[];
 
     constructor() {
         this.shapes = [];
     }
 
-    getShape(index: number): Shapes.IShape {
+    getShape(index: number): IShape {
         if (index > this.shapes.length || index < 0) {
             throw ("Index is out of bounds");
         }

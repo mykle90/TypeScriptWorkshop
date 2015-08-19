@@ -1,3 +1,4 @@
+/// <reference path="../typings/jquery/jquery.d.ts" />
 /// <reference path="shape.ts" />
 var App = (function () {
     function App() {
