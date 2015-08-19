@@ -25,6 +25,15 @@ var Shapes;
         return Rectangle;
     })();
     Shapes.Rectangle = Rectangle;
+    var Triangle = (function () {
+        function Triangle() {
+        }
+        Triangle.prototype.area = function () { throw new Error("Not implemented"); };
+        Triangle.prototype.circumfence = function () { throw new Error("Not implemented"); };
+        Triangle.prototype.getType = function () { throw new Error("Not implemented"); };
+        return Triangle;
+    })();
+    Shapes.Triangle = Triangle;
     var Square = (function (_super) {
         __extends(Square, _super);
         function Square() {
@@ -42,6 +51,17 @@ var Shapes;
         return Circle;
     })();
     Shapes.Circle = Circle;
+    var Cube = (function () {
+        function Cube() {
+        }
+        Cube.prototype.volume = function () { throw new Error("Not implemented"); };
+        Cube.prototype.surface = function () { throw new Error("Not implemented"); };
+        Cube.prototype.area = function () { throw new Error("Not implemented"); };
+        Cube.prototype.circumfence = function () { throw new Error("Not implemented"); };
+        Cube.prototype.getType = function () { throw new Error("Not implemented"); };
+        return Cube;
+    })();
+    Shapes.Cube = Cube;
     var Sphere = (function (_super) {
         __extends(Sphere, _super);
         function Sphere() {

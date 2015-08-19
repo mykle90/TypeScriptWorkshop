@@ -31,6 +31,14 @@
         getType(): string { throw new Error("Not implemented"); }
     }
 
+    export class Triangle implements IShape {
+        area(): number { throw new Error("Not implemented"); }
+
+        circumfence(): number { throw new Error("Not implemented"); }
+
+        getType(): string { throw new Error("Not implemented"); }
+    }
+
     export class Square extends Rectangle {
   
     }
@@ -43,6 +51,18 @@
         getType(): string { throw new Error("Not implemented"); }
     }
 
+    export class Cube implements I3DShape {
+        volume(): number { throw new Error("Not implemented"); }
+
+        surface(): number { throw new Error("Not implemented"); }
+
+        area(): number { throw new Error("Not implemented"); }
+
+        circumfence(): number { throw new Error("Not implemented"); }
+
+        getType(): string { throw new Error("Not implemented"); }
+    }
+    
     export class Sphere extends Circle implements I3DShape {
         volume(): number { throw new Error("Not implemented"); }
 
